@@ -44,16 +44,7 @@ npm install
 
 ### 3. Configure Environment Variables
 
-Create a .env file in the root directory and add:
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
-MAILTRAP_USER=your_mailtrap_username
-MAILTRAP_PASS=your_mailtrap_password
-TWILIO_ACCOUNT_SID=your_twilio_sid
-TWILIO_AUTH_TOKEN=your_twilio_auth_token
-TWILIO_PHONE_NUMBER=your_twilio_registered_number
-Make sure to never commit your .env file. It is included in .gitignore.
+<pre> Create a `.env` file in the root directory and add: ```env PORT=3000 MONGO_URI=mongodb://localhost:27017/auth TWILIO_SID=your_twilio_sid TWILIO_AUTH_TOKEN=your_twilio_auth_token TWILIO_PHONE=your_twilio_phone_number JWT_SECRET=your_jwt_secret NODE_ENV=development MAILTRAP_TOKEN=your_mailtrap_token CLIENT_URL=http://localhost:5173 ``` Make sure to never commit your `.env` file. It is included in `.gitignore`. </pre>
 
 ### 4. Configure Environment Variables
 npm start
